@@ -3,6 +3,8 @@ irayalina.utils
 ===============
 """
 
+from functools import wraps
+
 from flask import request
 from flask import render_template as render
 
