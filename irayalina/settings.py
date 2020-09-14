@@ -1,5 +1,5 @@
 """
-1alina.settings
+irayalina.settings
 ===============
 
 Configuration.
