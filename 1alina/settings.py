@@ -1,0 +1,7 @@
+"""
+1alina.settings
+===============
+
+Configuration.
+"""
+
