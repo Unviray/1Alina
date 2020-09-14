@@ -11,6 +11,7 @@ flask = "^1.1.2"
 peewee = "^3.13.3"
 flask-WTF = "^0.14.3"
 environs = "^8.0.0"
+gunicorn = "^20.0.4"
 
 [tool.poetry.dev-dependencies]
 
