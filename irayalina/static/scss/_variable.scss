@@ -1,0 +1,13 @@
+$color-primary: rgba(0,48,73,1);
+$color-secondary:rgba(214,40,40,1);
+
+$section-padding-ltr: 50px;
+
+$align-content: flex-start,flex-end,center,space-between,stretch,space-around;
+$align-items: flex-start, flex-end,center,stretch,baseline;
+
+$type-alert: 
+    ("danger" : rgba(248,215,218,1), "success" : rgba(212,237,218,1), "default" : rgba(214,216,217,1))
+;
+
+$brands-color:'facebook' #3B5998,'twitter' #55ACEE, 'instagram' #3F729B, 'envelope' #FFBB00, 'phone' #7CBB00;

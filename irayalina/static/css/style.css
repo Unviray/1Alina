@@ -1,4 +1,529 @@
-html,
-body {
-    height: 100%;
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+td:not([align]), th:not([align]) {
+  text-align: left;
+}
+
+.call-to-action .text-action .popular-search-action, footer .footer-content.footer-links, section .marketplace-content, section .trust-content, section .quality-content .quality-item, section .popular-service-content, header nav {
+  display: flex;
+  flex-direction: row;
+}
+
+footer, section .marketplace-content .marketplace-item, header, .authentification, section .section-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.authentification, section .section-title {
+  justify-content: center;
+}
+
+footer .footer-content.footer-links, section .marketplace-content, section .trust-content, section .quality-content .quality-item, section .popular-service-content, header nav {
+  justify-content: space-between;
+}
+
+.call-to-action .text-action .popular-search-action {
+  justify-content: center;
+}
+
+section .marketplace-content, section .trust-content {
+  flex-wrap: wrap;
+}
+
+.authentification {
+  align-content: center;
+}
+
+.authentification, section .marketplace-content {
+  align-items: center;
+}
+
+section {
+  padding: 50px;
+}
+section.white-bg {
+  background: gainsboro;
+}
+section.white-bg .section-title h2 {
+  color: #2c5383;
+}
+section.theme-bg {
+  background: #2c5383;
+}
+section.theme-bg .section-title h2 {
+  color: white;
+}
+section.dark-bg, section.bg-img {
+  background: black;
+  color: white;
+}
+section.dark-bg .section-title h2, section.bg-img .section-title h2 {
+  color: #2c5383;
+}
+section.secondary-bg {
+  background: #5fafc9;
+}
+section.secondary-bg .section-title h2 {
+  color: black;
+}
+section .section-title.center {
+  text-align: center;
+}
+section .section-title.left {
+  text-align: left;
+}
+section .section-title.right {
+  text-align: right;
+}
+section .section-title h2 {
+  font-size: 2.3em;
+  padding: 25px 0;
+}
+section .section-title p {
+  opacity: 0.7;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: Roboto, serif;
+  width: 100%;
+  min-height: 100vh;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #2c5383;
+  transition: 0.3s;
+}
+a:hover, a.active {
+  color: #5fafc9;
+}
+
+ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+p {
+  word-break: break-all;
+  opacity: 0.8;
+}
+
+button {
+  background: #2c5383;
+  padding: 12px 24px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+button.bg-theme {
+  background: white;
+  color: #2c5383;
+}
+button.bg-theme:hover {
+  background: #5fafc9;
+  color: white;
+}
+
+form input {
+  padding: 8px 16px;
+}
+
+.slideshow-container {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slideshow-container .slide-arrow .prev, .slideshow-container .slide-arrow .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 2.8em;
+  transition: 0.6s ease;
+}
+.slideshow-container .slide-arrow .next {
+  right: 10px;
+}
+.slideshow-container .slide-arrow .prev:hover, .slideshow-container .slide-arrow .next:hover {
+  color: #5fafc9;
+}
+.slideshow-container .slide-content .slide-item .slide-caption {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  line-height: 2em;
+  transform: translate(-50%, -50%);
+}
+.slideshow-container .slide-content .slide-item .slide-caption h1 {
+  font-size: 3em;
+  color: #2c5383;
+  padding: 25px 0;
+  line-height: 1.2em;
+}
+.slideshow-container .slide-content .slide-item .slide-caption p {
+  color: black;
+  font-weight: bold;
+  font-size: 1.2em;
+  opacity: 0.6;
+}
+.slideshow-container .slide-content .slide-item .slide-caption button {
+  width: 50%;
+  transition: 0.3s;
+}
+.slideshow-container .slide-content .slide-item .slide-caption button:hover {
+  text-decoration: underline;
+}
+.slideshow-container .slide-dot {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 47%;
+}
+.slideshow-container .slide-dot .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border: 3px solid #2c5383;
+}
+.slideshow-container .slide-dot .dot.active, .slideshow-container .slide-dot .dot:hover {
+  background-color: #5fafc9;
+}
+
+.img-rounded {
+  border-radius: 100%;
+}
+
+.fa-facebook {
+  color: #3B5998;
+}
+
+.fa-twitter {
+  color: #55ACEE;
+}
+
+.fa-instagram {
+  color: #3F729B;
+}
+
+.fa-envelope {
+  color: #FFBB00;
+}
+
+.fa-phone {
+  color: #7CBB00;
+}
+
+header nav {
+  padding: 25px 50px;
+  background: #2c5383;
+  line-height: 50%;
+}
+header nav a {
+  color: white;
+}
+header nav a:hover, header nav a.active {
+  color: white;
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+}
+header nav a.signup {
+  border: 1px solid white;
+  padding: 12px 24px;
+}
+header nav a.signup:hover {
+  background: white;
+  color: #2c5383;
+}
+header nav .nav-logo {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.call-to-action {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("http://picsum.photos/400/300");
+  height: calc(100vh - 25px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.call-to-action .text-action {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.6em;
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  width: 60%;
+}
+.call-to-action .text-action h1 {
+  font-weight: bold;
+}
+.call-to-action .text-action form input {
+  width: 50%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.call-to-action .text-action form button {
+  margin-left: -25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.call-to-action .text-action form input, .call-to-action .text-action form button {
+  padding: 12px 24px;
+  border: none;
+}
+.call-to-action .text-action .popular-search-action {
+  font-size: 14px;
+}
+.call-to-action .text-action .popular-search-action ul li a {
+  background: #2c5383;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+.call-to-action .text-action .popular-search-action ul li a:hover {
+  border: 1px solid white;
+}
+
+section .popular-service-content {
+  padding: 50px 0;
+}
+section .popular-service-content img {
+  border-radius: 5px;
+}
+section .popular-service-content .popular-service-item {
+  position: relative;
+}
+section .popular-service-content .popular-service-item .popular-service-text {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 1.2em;
+  background: #2c5383;
+  padding: 5px;
+  border-bottom-right-radius: 5px;
+}
+section .popular-service-content .popular-service-item .popular-service-text h3 {
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+section .popular-service-content .popular-service-item:hover > .popular-service-text h3 {
+  color: #5fafc9;
+}
+section .quality-content {
+  padding: 50px 0;
+}
+section .quality-content .quality-item {
+  padding: 25px 0;
+}
+section .quality-content .quality-item .quality-text.right {
+  padding-left: 25px;
+}
+section .quality-content .quality-item .quality-text.left {
+  padding-right: 25px;
+}
+section .quality-content .quality-item .quality-text h3 {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 10px 0;
+}
+section .testimonial-content .testimonial-item span {
+  display: block;
+  font-style: italic;
+}
+section .testimonial-content .testimonial-item .testimonial-text {
+  opacity: 0.7;
+}
+section .testimonial-content .testimonial-item .testimonial-text p:before, section .testimonial-content .testimonial-item .testimonial-text p:after {
+  content: '"';
+}
+section .marketplace-content .marketplace-item {
+  text-align: center;
+  padding: 50px;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  margin: 10px;
+}
+section .marketplace-content .marketplace-item svg, section .marketplace-content .marketplace-item i {
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.7);
+}
+section .marketplace-content .marketplace-item p {
+  color: rgba(0, 0, 0, 0.7);
+  transition: 0.3s;
+}
+section .marketplace-content .marketplace-item:hover > p {
+  color: white;
+}
+
+footer {
+  background: #2c5383;
+}
+footer .footer-content.footer-links {
+  padding: 50px;
+}
+footer .footer-content.footer-links .footer-item h3 {
+  font-weight: bold;
+}
+footer .footer-content.footer-links .footer-item ul li {
+  display: inherit;
+  opacity: 0.7;
+  padding: 12px 0;
+}
+footer .footer-content.footer-links .footer-item ul li a {
+  color: white;
+  padding: 5px 0;
+  transition: 0.3s;
+}
+footer .footer-content.footer-links .footer-item ul li a:hover {
+  border-bottom: 2px solid white;
+}
+footer .footer-content.footer-copyright {
+  background: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 50px;
+}
+footer .footer-content.footer-copyright .social-network ul li {
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+.authentification {
+  background: whitesmoke;
+  height: 100vh;
+}
+.authentification .authentification-content {
+  background: white;
+  width: 450px;
+  border: 1px solid #2c5383;
+  border-radius: 5px;
+  padding: 25px 75px;
+}
+.authentification .authentification-content .authentification-logo {
+  text-align: center;
+  padding-bottom: 25px;
+}
+.authentification .authentification-content .authentification-logo h1 {
+  font-size: 2.5em;
+}
+.authentification .authentification-content .authentification-form {
+  padding: 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.authentification .authentification-content .authentification-form .form-group {
+  position: relative;
+  z-index: 1;
+  margin: 15px 0;
+  width: 100%;
+}
+.authentification .authentification-content .authentification-form .form-group .form-label {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  z-index: 2;
+  font-size: 12px;
+  padding: 0 5px;
+  background: white;
+}
+.authentification .authentification-content .authentification-form .form-group .form-eye {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.authentification .authentification-content .authentification-form .form-group .form-eye:hover {
+  color: #5fafc9;
+}
+.authentification .authentification-content .authentification-form .form-group input, .authentification .authentification-content .authentification-form .form-group button {
+  width: 100%;
+}
+.authentification .authentification-content .authentification-form .form-group button:hover {
+  background: #1f3b5d;
+}
+.authentification .authentification-content .authentification-footer {
+  padding: 25px 0;
+}
+.authentification .authentification-content .authentification-footer button {
+  width: 100%;
+  background: #5fafc9;
+}
+.authentification .authentification-content .authentification-footer button:hover {
+  background: #3e99b7;
+}
+
+/*# sourceMappingURL=style.css.map */
