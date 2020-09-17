@@ -1,0 +1,111 @@
+%flex-row{
+    display:flex;
+    flex-direction:row;
+}
+
+%flex-column{
+    display:flex;
+    flex-direction:column;
+}
+
+%flex-column-center{
+    @extend %flex-column;
+    justify-content:center;
+}
+
+%flex-row-sb{
+    @extend %flex-row;
+    justify-content:space-between;
+}
+
+%flex-row-sa{
+    @extend %flex-row;
+    justify-content:space-around;
+}
+
+%flex-row-center{
+    @extend %flex-row;
+    justify-content:center;
+}
+
+%flex-row-fs{
+    @extend %flex-row;
+    justify-content:flex-start;
+}
+
+%flex-row-fe{
+    @extend %flex-row;
+    justify-content:flex-end;
+}
+
+%flex-wrap{
+    flex-wrap:wrap;
+}
+
+@each $align in $align-content{
+    %align-content-#{$align}{
+        align-content: $align;
+    }
+}
+
+@each $align in $align-items{
+    %align-items-#{$align}{
+        align-items:$align;
+    }
+}
+
+%section{
+    padding:$section-padding-ltr;
+    &.white-bg{
+        background: darken(whitesmoke,10);
+        & .section-title h2{
+            color:$color-primary;
+        }
+    }
+    &.theme-bg{
+        background:$color-primary;
+        & .section-title h2{
+            color:white;
+        }
+    }
+    &.dark-bg, &.bg-img{
+        background:black;
+        & .section-title h2{
+            color:$color-primary;
+        }
+        color:white;
+    }
+    &.secondary-bg{
+        background:$color-secondary;
+        & .section-title h2{
+            color:black;
+        }
+    }
+    & .section-title{
+        @extend %flex-column-center;
+        &.center {
+            text-align:center;
+        }
+        &.left {
+            text-align:left;
+        }
+        &.right{
+            text-align:right;
+        }
+        & h2{
+            font-size:2.3em;
+            padding:25px 0;
+        }
+
+        & p{
+            opacity:0.7;
+        }
+    }
+}
+
+%color-link-linear-theme{
+    color:$color-primary;
+    background:$color-primary;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+}

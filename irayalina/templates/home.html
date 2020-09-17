@@ -2,5 +2,196 @@
 
 {% block body %}
     {% include 'includes/navbar.html' %}
+	<div class="call-to-action">
+        <div class="text-action">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+            <form action="#">
+                <input type="search" placeholder="Placeholder">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <div class="popular-search-action">
+                <label>Most search:</label>
+                <ul>
+                    <li>
+                        <a href="#">Popular 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Popular 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Popular 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="popular-service theme-bg">
+        <div class="section-title center">
+            <h2>Lorem ipsum dolor</h2>
+        </div>
+        <div class="popular-service-content">
+            <a href="#" class="popular-service-item">
+                <img src="https://picsum.photos/300/400" alt="Image 1">
+                <div class="popular-service-text">
+                    <h3>Popular 1</h3>
+                </div>
+            </a>
+            <a href="#" class="popular-service-item">
+                <img src="https://picsum.photos/300/400" alt="Image 1">
+                <div class="popular-service-text">
+                    <h3>Popular 2</h3>
+                </div>
+            </a>
+            <a href="#" class="popular-service-item">
+                <img src="https://picsum.photos/300/400" alt="Image 1">
+                <div class="popular-service-text">
+                    <h3>Popular 3</h3>
+                </div>
+            </a>
+        </div>
+        <div class="section-footer">
+            <button class="bg-theme">More</button>
+        </div>
+    </section>
+
+    <section class="quality white-bg">
+        <div class="section-title center">
+            <h2>Lorem ipsum dolor</h2>
+        </div>
+        <div class="quality-content">
+            <div class="quality-item">
+                <div class="quality-picture">
+                    <img src="https://picsum.photos/668/450" alt="Image 1">
+                </div>
+                <div class="quality-text right">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nesciunt sapiente ratione, maiores aperiam iste!</p>
+                </div>
+            </div>
+            <div class="quality-item">
+                <div class="quality-text left">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nesciunt sapiente ratione, maiores aperiam iste!</p>
+                </div>
+                <div class="quality-picture">
+                    <img src="https://picsum.photos/668/450" alt="Image 1">
+                </div>
+            </div>
+            <div class="quality-item">
+                <div class="quality-picture">
+                    <img src="https://picsum.photos/668/450" alt="Image 1">
+                </div>
+                <div class="quality-text right">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nesciunt sapiente ratione, maiores aperiam iste!</p>
+                </div>
+            </div>
+            <div class="quality-item">
+                <div class="quality-text left">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nesciunt sapiente ratione, maiores aperiam iste!</p>
+                </div>
+                <div class="quality-picture">
+                    <img src="https://picsum.photos/668/450" alt="Image 1">
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <section class="trust dark-bg">
+        <div class="section-title center">
+            <h2>Our customer</h2>
+        </div>
+        <div class="trust-content">
+            <div class="trust-item">
+                <img src="{{ url_for('public', filename='img/facebook.png') }}" alt="Logo">
+            </div>
+            <div class="trust-item">
+                <img src="{{ url_for('public', filename='img/facebook.png') }}" alt="Logo">
+            </div>
+            <div class="trust-item">
+                <img src="{{ url_for('public', filename='img/facebook.png') }}" alt="Logo">
+            </div>                        
+        </div>
+    </section>
+
+    <section class="testimonial white-bg">
+        <div class="section-title center">
+            <h2>Lorem ipsum dolor</h2>
+        </div>
+        <div class="testimonial-content slideshow-container">
+            <div class="slide-content">
+                <div class="testimonial-item slide-item">
+                    <div class="slide-caption">
+                        <img src="https://picsum.photos/100/100" class="img-rounded" alt="image 1">
+                        <span>Chris Redfield</span>
+                        <div class="testimonial-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et explicabo necessitatibus quas numquam sequi rerum voluptates repellendus soluta ducimus id dolores expedita, voluptatum maxime nesciunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item slide-item">
+                    <div class="slide-caption">
+                        <img src="https://picsum.photos/100/100" class="img-rounded" alt="image 1">
+                        <span>Chris Redfield</span>
+                        <div class="testimonial-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et explicabo necessitatibus quas numquam sequi rerum voluptates repellendus soluta ducimus id dolores expedita, voluptatum maxime nesciunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item slide-item">
+                    <div class="slide-caption">
+                        <img src="https://picsum.photos/100/100" class="img-rounded" alt="image 1">
+                        <span>Chris Redfield</span>
+                        <div class="testimonial-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et explicabo necessitatibus quas numquam sequi rerum voluptates repellendus soluta ducimus id dolores expedita, voluptatum maxime nesciunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-arrow">
+                <a href="#" class="prev">&#10094;</a>
+                <a href="#" class="next">&#10095;</a>
+            </div>
+            <div class="slide-dot">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="marketplace secondary-bg">
+        <div class="section-title">
+            <h2>Lorem ipsum dolor</h2>
+        </div>
+        <div class="marketplace-content">
+            <a href="#" class="marketplace-item">
+                <i class="fas fa-home"></i>
+                <p>Market place</p>
+            </a>
+            <a href="#" class="marketplace-item">
+                <i class="fas fa-home"></i>
+                <p>Market place</p>
+            </a>
+            <a href="#" class="marketplace-item">
+                <i class="fas fa-home"></i>
+                <p>Market place</p>
+            </a>
+            <a href="#" class="marketplace-item">
+                <i class="fas fa-home"></i>
+                <p>Market place</p>
+            </a>
+            <a href="#" class="marketplace-item">
+                <i class="fas fa-home"></i>
+                <p>Market place</p>
+            </a>
+            <a href="#" class="marketplace-item">
+                <i class="fas fa-home"></i>
+                <p>Market place</p>
+            </a>            
+        </div>
+    </section> 
     {% include 'includes/footer.html' %}
 {% endblock body %}

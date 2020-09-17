@@ -1,0 +1,143 @@
+html,body{
+    font-size:16px;
+    font-family: Roboto, serif;
+    width:100%;
+    min-height:100vh;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:$color-primary;
+    transition:0.3s;
+    &:hover, &.active{
+        color:$color-secondary;
+    }
+}
+
+ul li{
+    display:inline-block;
+    padding:0 10px;
+}
+
+textarea{
+    resize:none;
+}
+
+p{
+    word-break: break-all;
+    opacity:0.8;
+}
+
+button{
+    background:$color-primary;
+    padding:12px 24px;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+    transition: 0.3s;
+    color:white;
+    &.bg-theme{
+        background:white;
+        color:$color-primary;
+        &:hover{
+            background:$color-secondary;
+            color:white;    
+        }
+    }
+}
+
+form {
+    & input {
+        padding:8px 16px;
+    }
+}
+
+.slideshow-container{
+    width:100%;
+    height:50vh;
+    position: relative;
+    margin:0 auto;
+    overflow:hidden;
+    & .slide-arrow {
+        & .prev, & .next{
+            cursor:pointer;
+            position:absolute;
+            top:50%;
+            width:auto;
+            margin-top:-22px;
+            padding:16px;
+            font-weight:bold;
+            font-size:2.8em;
+            transition:0.6s ease;
+        }
+        & .next{
+            right:10px;
+        }
+        & .prev:hover, & .next:hover{
+            color:$color-secondary;   
+        }
+    }
+    & .slide-content {
+        & .slide-item{
+            & .slide-caption{
+                text-align:center;
+                position:absolute;
+                top:50%;
+                left:50%;
+                line-height: 2em;
+                transform:translate(-50%,-50%);
+                & h1{
+                    font-size:3em;
+                    color:$color-primary;
+                    padding:25px 0;
+                    line-height:1.2em;
+                }
+                & p{
+                    color:black;
+                    font-weight:bold;
+                    font-size:1.2em;
+                    opacity:0.6;
+                }
+                & button{
+                    width:50%;
+                    transition: 0.3s;
+                    &:hover{
+                        text-decoration:underline;
+                    }
+                }
+            }
+        }
+    }
+    & .slide-dot { 
+        text-align:center;
+        position:absolute;
+        bottom:0;
+        left:47%;
+        & .dot{
+            cursor:pointer;
+            height:15px;
+            width:15px;
+            margin:0 2px;
+            background-color:black;
+            border-radius:50%;
+            display:inline-block;
+            transition: background-color 0.6s ease;
+            border: 3px solid $color-primary;
+            &.active, &:hover{
+                background-color: $color-secondary;
+            }
+        }
+    }
+}
+
+.img-rounded{
+    border-radius:100%;
+}
+
+@each $brand,$color in $brands-color{
+    .fa-#{$brand} {
+        color:$color;
+    }
+}
